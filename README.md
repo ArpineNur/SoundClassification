@@ -28,9 +28,9 @@ After the directory is specified the script will filter *.mp3* files and start t
 If no *.mp3* files are found the script will stop execution.
 
 After playing each sound the script will pause and wait for classification:
-    - If you want to classify the sound as clean, type `c`
-    - If you want to classify the sound as noisy, type `n`
-    - If you want to replay the sound, type `r`
+* If you want to classify the sound as clean, type `c`
+* If you want to classify the sound as noisy, type `n`
+* If you want to replay the sound, type `r`
 
 If you type anything else besides the above mentioned inputs, the script will continue to ask for the right input.
 
