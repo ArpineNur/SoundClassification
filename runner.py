@@ -12,7 +12,7 @@ path = './data' if path == '' else path
 if not os.path.exists(path) or not os.path.isdir(path):
     raise Exception(f"{path}  -  Directory not found")
 
-# Getting all files ans filtering .mp3 files
+# Getting all files and filtering .mp3 files
 all_files = os.listdir(path)
 mp3_files = list(filter(lambda file: ".mp3" in file, all_files))
 print(f"Found {len(mp3_files)} mp3 file(s).")
@@ -59,4 +59,5 @@ if mp3_files != []:
         json.dump(classified_files, f,  indent=4)
 
     print("File is successfully saved.")
+
 print("END of run.")
